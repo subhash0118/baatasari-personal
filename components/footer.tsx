@@ -1,80 +1,139 @@
-import Link from "next/link"
+import Link from "next/link";
 import Image from "next/image";
+import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-blue-950 text-white py-16">
-      <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-3 gap-12 mb-12">
-          {/* Contact Info */}
-          <div>
-            <div className="flex items-center gap-2 mb-6">
-  <Image
-    src="foot-logo.png"        
-    alt="Icon"
-    width={216}
-    height={216}
-    className="object-contain"
-  />
- 
-</div>
-            <div className="space-y-3 text-gray-300">
-              <p className="font-semibold text-white">Contact Us:</p>
-              <p className="leading-relaxed">
-                Ashtvinayak Centre,
-                <br />
-                Amardeep Cinema - Gaondevi
-                <br />
-                amravati-444601-MH-INDIA
+    <footer className="bg-[#0C1D37] text-white">
+      {/* TOP SECTION */}
+      <div className="px-16 py-20">
+        <div className="flex flex-col lg:flex-row justify-between gap-20">
+          
+          {/* LEFT BLOCK */}
+          <div className="max-w-sm">
+            <Image
+              src="/foot-logo.png"
+              alt="Baatasari"
+              width={200}
+              height={60}
+              className="mb-8 object-contain"
+            />
+
+            <div className="space-y-3">
+              {/* Contact Us */}
+              <p className="font-albert font-[500] text-[18px] leading-[24px] text-white">
+                Contact Us:
               </p>
-              <p>+91 7020704207</p>
-              <p>soulseeker@gmail.com</p>
+
+              {/* Address */}
+              <p className="font-albert font-[400] text-[14px] leading-[20px] tracking-[0.0025em] text-white">
+                Venture Development Center,
+                <br />
+                Rushikonda,
+                <br />
+                Visakhapatnam, 530045
+              </p>
+
+              <p className="font-albert font-[400] text-[14px] leading-[20px] tracking-[0.0025em] text-white">
+                contactus@baatasari.com
+              </p>
+
+              <p className="font-albert font-[400] text-[14px] leading-[20px] tracking-[0.0025em] text-white">
+                +91 9578937675
+              </p>
             </div>
           </div>
 
-          {/* Connect With */}
-          <div>
-            <h3 className="font-semibold text-lg mb-4">Connect with</h3>
-            <ul className="space-y-2 text-gray-300">
-              <li>
-                <Link href="#" className="hover:text-white transition">
-                  Events
-                </Link>
-              </li>
-            </ul>
-          </div>
+          {/* RIGHT BLOCK */}
+          <div className="flex gap-24">
+            
+            {/* COLUMN ONE */}
+            <div>
+              <h3 className="font-inter font-[600] text-[16px] leading-[150%] text-white mb-4">
+                Column One
+              </h3>
 
-          {/* Follow Us */}
-          <div>
-            <h3 className="font-semibold text-lg mb-4">Follow Us</h3>
-            <ul className="space-y-2 text-gray-300">
-              <li>
-                <Link href="#" className="hover:text-white transition flex items-center gap-2">
-                  <span>📘</span> Facebook
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-white transition flex items-center gap-2">
-                  <span>🔗</span> LinkedIn
-                </Link>
-              </li>
-            </ul>
+              <ul className="space-y-3">
+                <li>
+                  <Link
+                    href="#"
+                    className="font-inter font-[400] text-[14px] leading-[150%] text-white underline-offset-0"
+                  >
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="#"
+                    className="font-inter font-[400] text-[14px] leading-[150%] text-white underline-offset-0"
+                  >
+                    Events
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            {/* FOLLOW US */}
+            <div>
+              <h3 className="font-inter font-[600] text-[16px] leading-[150%] text-white mb-4">
+                Follow Us
+              </h3>
+
+              <ul className="space-y-3">
+                {/* Instagram */}
+                <li className="flex items-center gap-3">
+                  <FaInstagram className="text-white text-[18px]" />
+                  <Link
+                    href="#"
+                    className="font-inter font-[400] text-[14px] leading-[150%] text-white underline-offset-0"
+                  >
+                    Instagram
+                  </Link>
+                </li>
+
+                {/* LinkedIn */}
+                <li className="flex items-center gap-3">
+                  <FaLinkedinIn className="text-white text-[18px]" />
+                  <Link
+                    href="#"
+                    className="font-inter font-[400] text-[14px] leading-[150%] text-white underline-offset-0"
+                  >
+                    LinkedIn
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
           </div>
         </div>
 
-        {/* Bottom Bar */}
-        <div className="border-t border-blue-900 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-gray-400 text-sm">
-          <p>© 2025 Soulseeker. All rights reserved. Soulseeker team Kerala, India.</p>
-          <div className="flex gap-6">
-            <Link href="#" className="hover:text-white transition">
+        {/* BOTTOM ROW */}
+        <div className="mt-20 pt-6 flex flex-col lg:flex-row justify-between items-center text-white">
+          <div className="space-y-1">
+            <p className="font-inter font-[600] text-[14px] leading-[150%]">
+              © 2025 Baatasari. All rights reserved.
+            </p>
+            <p className="font-inter font-[600] text-[14px] leading-[150%]">
+              Images and illustrations sourced from Freepik
+            </p>
+          </div>
+
+          <div className="flex gap-8 mt-4 lg:mt-0">
+            <Link
+              href="#"
+              className="font-inter font-[600] text-[14px] leading-[150%] text-white underline"
+            >
               Privacy Policy
             </Link>
-            <Link href="#" className="hover:text-white transition">
+            <Link
+              href="#"
+              className="font-inter font-[600] text-[14px] leading-[150%] text-white underline"
+            >
               Terms of Service
             </Link>
           </div>
         </div>
       </div>
     </footer>
-  )
+  );
 }
