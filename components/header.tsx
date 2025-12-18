@@ -8,9 +8,9 @@ export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50">
+    <header className="absolute top-0 left-0 right-0 z-50">
       {/* FULL WIDTH WRAPPER */}
-      <div className="px-6 pt-6">
+      <div className="px-6 pt-3">
         {/* HEADER FRAME */}
         <div
           className="
@@ -18,8 +18,6 @@ export default function Header() {
             flex items-center justify-between
             rounded-[12px]
             px-8 py-[19px]
-            bg-black/25
-            backdrop-blur-md
           "
         >
           {/* Logo */}
@@ -35,10 +33,10 @@ export default function Header() {
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-10 text-white">
             <Link
-              href="#"
+              href="/about"
               className="font-poppins text-[18px] leading-[24px] font-[500] hover:text-white/80 transition"
             >
-              Home
+              About us
             </Link>
             <Link
               href="#"
