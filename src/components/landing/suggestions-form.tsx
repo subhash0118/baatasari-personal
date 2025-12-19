@@ -14,8 +14,8 @@ export default function SuggestionsForm() {
             className="
               font-bricolage
               font-[600]
-              text-[48px]
-              leading-[60px]
+              text-3xl md:text-[48px]
+              leading-tight md:leading-[60px]
               tracking-[-0.02em]
               text-white
               mb-4
@@ -28,8 +28,8 @@ export default function SuggestionsForm() {
             className="
               font-bricolage
               font-[600]
-              text-[48px]
-              leading-[60px]
+              text-3xl md:text-[48px]
+              leading-tight md:leading-[60px]
               tracking-[-0.02em]
               text-white
               mb-6
@@ -113,7 +113,7 @@ export default function SuggestionsForm() {
             <button
               type="submit"
               className="
-                w-[480px]
+                w-full max-w-[480px]
                 h-[60px]
                 px-5
                 py-[18px]
@@ -139,6 +139,6 @@ export default function SuggestionsForm() {
           </div>
         </form>
       </div>
-    </section>
+    </section >
   );
 }

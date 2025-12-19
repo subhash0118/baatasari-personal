@@ -23,18 +23,17 @@ export function Header() {
           </div>
 
           <nav className="absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 items-center gap-6 md:flex font-[var(--font-poppins)]">
-            <Link href="/about" className="font-medium text-[18px] leading-[24px] tracking-normal transition-colors hover:text-primary align-middle">
-              About us
-            </Link>
+          
             <a href="#" className="font-medium text-[18px] leading-[24px] tracking-normal transition-colors hover:text-primary align-middle">
               Events
             </a>
+            
             <a href="#" className="font-medium text-[18px] leading-[24px] tracking-normal transition-colors hover:text-primary align-middle">
-              Movies
+              Talents
             </a>
-            <a href="#" className="font-medium text-[18px] leading-[24px] tracking-normal transition-colors hover:text-primary align-middle">
-              Activities
-            </a>
+            <Link href="/about" className="font-medium text-[18px] leading-[24px] tracking-normal transition-colors hover:text-primary align-middle">
+              About us
+            </Link>
           </nav>
         </div>
 
