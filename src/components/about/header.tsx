@@ -79,7 +79,7 @@ export default function Header() {
               href="#"
               className="block px-6 py-4 text-gray-900 font-poppins text-[18px] leading-[24px] font-[500]"
             >
-              Home
+              About us
             </Link>
             <Link
               href="#"

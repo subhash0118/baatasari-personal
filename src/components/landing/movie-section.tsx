@@ -1,4 +1,4 @@
-import { MovieCard } from "@/components/about/movie-card"
+import { MovieCard } from "@/components/landing/movie-card"
 
 interface MovieSectionProps {
   title: string

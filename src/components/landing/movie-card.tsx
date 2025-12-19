@@ -14,7 +14,7 @@ export function MovieCard({ title, rating, language, image }: MovieCardProps) {
     <Card className="group flex-shrink-0 w-[160px] md:w-[200px] overflow-hidden border-0 shadow-sm transition-all hover:shadow-xl bg-card text-card-foreground">
       <div className="relative aspect-[2/3] overflow-hidden bg-muted">
         <img
-          src="/about/card-placeholder.png"
+          src="/landing/card-placeholder.png"
           alt={title}
 
           className="h-full w-full object-cover transition-transform group-hover:scale-105"

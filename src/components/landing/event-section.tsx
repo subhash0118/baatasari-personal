@@ -1,4 +1,4 @@
-import { EventCard } from "@/components/about/event-card"
+import { EventCard } from "@/components/landing/event-card"
 
 interface EventSectionProps {
   title: string
