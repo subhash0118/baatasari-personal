@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button"
 import { Search, MapPin, Menu } from "lucide-react"
 import Image from "next/image"
+import Link from "next/link"
 
 export function Header() {
   return (
@@ -12,7 +13,7 @@ export function Header() {
           <div className="flex items-center gap-2">
             <div className="relative h-16 w-52">
               <Image
-                src="/about/logo.png"
+                src="/landing/logo.png"
                 alt="Baatasari"
                 fill
                 className="object-contain object-left"
@@ -22,18 +23,17 @@ export function Header() {
           </div>
 
           <nav className="absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 items-center gap-6 md:flex font-[var(--font-poppins)]">
-            <a href="#" className="font-medium text-[18px] leading-[24px] tracking-normal transition-colors hover:text-primary align-middle">
-              For you
-            </a>
+          
             <a href="#" className="font-medium text-[18px] leading-[24px] tracking-normal transition-colors hover:text-primary align-middle">
               Events
             </a>
+            
             <a href="#" className="font-medium text-[18px] leading-[24px] tracking-normal transition-colors hover:text-primary align-middle">
-              Movies
+              Talents
             </a>
-            <a href="#" className="font-medium text-[18px] leading-[24px] tracking-normal transition-colors hover:text-primary align-middle">
-              Activities
-            </a>
+            <Link href="/about" className="font-medium text-[18px] leading-[24px] tracking-normal transition-colors hover:text-primary align-middle">
+              About us
+            </Link>
           </nav>
         </div>
 

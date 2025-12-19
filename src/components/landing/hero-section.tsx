@@ -8,7 +8,7 @@ export function HeroSection() {
       <div className="relative bg-gradient-to-r from-primary to-primary/80 w-full overflow-hidden py-12 md:py-16 rounded-2xl md:rounded-3xl shadow-lg">
         <div className="absolute inset-0 opacity-20">
           <Image
-            src="/about/Baatasari-pass-entertainment-banner.jpg"
+            src="/landing/Baatasari-pass-entertainment-banner.jpg"
             alt="Baatasari Pass Banner"
             fill
             className="object-cover"

@@ -40,7 +40,7 @@ export function ArtistSection() {
             >
               <div className="h-32 w-32 overflow-hidden rounded-full ring-2 ring-border transition-all group-hover:ring-primary">
                 <img
-                  src="/about/card-placeholder.png"
+                  src="/landing/card-placeholder.png"
                   alt={artist.name}
                   className="h-full w-full object-cover"
                 />

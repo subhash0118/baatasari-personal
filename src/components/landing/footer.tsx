@@ -10,7 +10,7 @@ export function Footer() {
           <div className="lg:col-span-2">
             <div className="mb-4 relative h-[88px] w-[216px] rounded-[12px] overflow-hidden">
               <Image
-                src="/about/footer-logo.png"
+                src="/landing/footer-logo.png"
                 alt="Baatasari"
                 fill
                 className="object-contain object-left"
