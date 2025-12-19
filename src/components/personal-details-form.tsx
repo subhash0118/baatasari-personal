@@ -147,6 +147,7 @@ export default function PersonalDetailsForm({ onContinue }: PersonalDetailsFormP
 
           {/* Form Fields Section */}
           <div className="space-y-6">
+            {/* Standardized 3-column grid for uniform width */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* Full Name */}
               <div className="space-y-2">
@@ -194,9 +195,7 @@ export default function PersonalDetailsForm({ onContinue }: PersonalDetailsFormP
                 />
                 {errors.emailId && <p className="text-red-500 text-xs mt-1">{errors.emailId}</p>}
               </div>
-            </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {/* Date of Birth */}
               <div className="space-y-2">
                 <Label htmlFor="dateOfBirth" className="text-sm text-gray-600">
@@ -231,9 +230,7 @@ export default function PersonalDetailsForm({ onContinue }: PersonalDetailsFormP
                 </Select>
                 {errors.gender && <p className="text-red-500 text-xs mt-1">{errors.gender}</p>}
               </div>
-            </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* Relationship Status */}
               <div className="space-y-2">
                 <Label htmlFor="relationshipStatus" className="text-sm text-gray-600">
@@ -249,8 +246,6 @@ export default function PersonalDetailsForm({ onContinue }: PersonalDetailsFormP
                   <SelectContent>
                     <SelectItem value="single">Single</SelectItem>
                     <SelectItem value="married">Married</SelectItem>
-                    <SelectItem value="divorced">Divorced</SelectItem>
-                    <SelectItem value="widowed">Widowed</SelectItem>
                     <SelectItem value="in-relationship">In a relationship</SelectItem>
                   </SelectContent>
                 </Select>
@@ -325,9 +320,9 @@ export default function PersonalDetailsForm({ onContinue }: PersonalDetailsFormP
                 </div>
               </div>
 
-              {/* Partner Form Fields Section */}
+              {/* Partner Form Fields Section - Standardized grid */}
               <div className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                   {/* Partner Full Name */}
                   <div className="space-y-2">
                     <Label htmlFor="partnerFullName" className="text-sm text-gray-600">
@@ -360,9 +355,7 @@ export default function PersonalDetailsForm({ onContinue }: PersonalDetailsFormP
                       <p className="text-red-500 text-xs mt-1">{errors.partner_mobileNumber}</p>
                     )}
                   </div>
-                </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {/* Anniversary Date */}
                   <div className="space-y-2">
                     <Label htmlFor="anniversaryDate" className="text-sm text-gray-600">

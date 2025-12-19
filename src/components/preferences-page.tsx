@@ -29,11 +29,11 @@ export default function PreferencesPage() {
   })
 
   const preferenceCards = [
-    { title: "Travel & Local Exploration Style", image: "/placeholder.svg", category: "travel" as PreferenceCategory },
-    { title: "Interests, Hobbies & Activities", image: "/placeholder.svg", category: "interests" as PreferenceCategory },
-    { title: "Food & Dining Preferences", image: "/placeholder.svg", category: "food" as PreferenceCategory },
-    { title: "Emotional Intent & Personality", image: "/placeholder.svg", category: "emotional" as PreferenceCategory },
-    { title: "Logistics & Discovery Style", image: "/placeholder.svg", category: "logistics" as PreferenceCategory },
+    { title: "Travel & Local Exploration Style", image: "/1.png", category: "travel" as PreferenceCategory },
+    { title: "Interests, Hobbies & Activities", image: "/2.png", category: "interests" as PreferenceCategory },
+    { title: "Food & Dining Preferences", image: "/4.png", category: "food" as PreferenceCategory },
+    { title: "Emotional Intent & Personality", image: "/4 (1).png", category: "emotional" as PreferenceCategory },
+    { title: "Logistics & Discovery Style", image: "/5.png", category: "logistics" as PreferenceCategory },
   ]
 
   const preferenceOptions = {
